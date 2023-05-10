@@ -1,0 +1,9 @@
+services:
+  downloader:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./models:/app/models
+    env_file:
+      - .env
